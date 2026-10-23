@@ -1,93 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="520" viewBox="0 0 860 520">
-  <defs>
-    <style>
-      .bg   { fill: #0c0c0c; }
-      .cyan { fill: #00d4d4; font-family: 'Cascadia Code','Consolas','Courier New',monospace; font-size: 14px; }
-      .gray { fill: #cccccc; font-family: 'Cascadia Code','Consolas','Courier New',monospace; font-size: 14px; }
-      .dgray{ fill: #555555; font-family: 'Cascadia Code','Consolas','Courier New',monospace; font-size: 14px; }
-      .yell { fill: #ffff00; font-family: 'Cascadia Code','Consolas','Courier New',monospace; font-size: 14px; }
-      .wht  { fill: #ffffff; font-family: 'Cascadia Code','Consolas','Courier New',monospace; font-size: 14px; }
-      .bar  { fill: none; stroke: #222; stroke-width: 1; rx: 8; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="480" viewBox="0 0 780 480">
+  <rect width="780" height="480" fill="#0c0c0c" rx="10"/>
+  <!-- Title bar -->
+  <rect width="780" height="30" fill="#1e1e1e" rx="10"/>
+  <rect y="18" width="780" height="12" fill="#1e1e1e"/>
+  <circle cx="18" cy="15" r="6" fill="#ff5f57"/>
+  <circle cx="38" cy="15" r="6" fill="#febc2e"/>
+  <circle cx="58" cy="15" r="6" fill="#28c840"/>
+  <text x="390" y="20" text-anchor="middle" font-family="Consolas,monospace" font-size="12" fill="#777">PowerShell — ProScan</text>
 
-  <!-- Fundo terminal -->
-  <rect width="860" height="520" fill="#0c0c0c" rx="10"/>
-  <!-- Barra de título -->
-  <rect width="860" height="32" fill="#1a1a1a" rx="10"/>
-  <rect y="10" width="860" height="22" fill="#1a1a1a"/>
-  <circle cx="20" cy="16" r="6" fill="#ff5f57"/>
-  <circle cx="40" cy="16" r="6" fill="#febc2e"/>
-  <circle cx="60" cy="16" r="6" fill="#28c840"/>
-  <text x="430" y="21" text-anchor="middle" font-family="Consolas,monospace" font-size="12" fill="#888">PowerShell — ProScan</text>
+  <style>
+    .t { font-family: 'Cascadia Code','Consolas','Courier New',monospace; font-size: 13.5px; }
+  </style>
 
-  <!-- Conteúdo terminal -->
-  <!-- Linha 1: topo da caixa -->
-  <text x="100" y="70"  class="cyan">╔══════════════════════════════════════════════════════════════╗</text>
-  <text x="100" y="90"  class="cyan">║                                                              ║</text>
-  <!-- P R O S C A N centralizado -->
-  <text x="100" y="110" class="cyan">║</text>
-  <text x="280" y="110" class="cyan">P R O S C A N</text>
-  <text x="744" y="110" class="cyan">║</text>
-  <!-- Subtítulo -->
-  <text x="100" y="130" class="cyan">║</text>
-  <text x="244" y="130" class="dgray">Diagnóstico do Windows</text>
-  <text x="744" y="130" class="cyan">║</text>
-  <text x="100" y="150" class="cyan">║                                                              ║</text>
-  <!-- Divisor -->
-  <text x="100" y="170" class="cyan">╠══════════════════════════════════════════════════════════════╣</text>
-  <text x="100" y="190" class="cyan">║                                                              ║</text>
-
-  <!-- Itens do menu -->
-  <text x="100" y="210" class="cyan">║</text>
-  <text x="196" y="210" class="cyan">[1]</text>
-  <text x="237" y="210" class="wht">  Diagnóstico completo</text>
-  <text x="744" y="210" class="cyan">║</text>
-
-  <text x="100" y="230" class="cyan">║</text>
-  <text x="196" y="230" class="cyan">[2]</text>
-  <text x="237" y="230" class="wht">  Identidade do computador e BIOS</text>
-  <text x="744" y="230" class="cyan">║</text>
-
-  <text x="100" y="250" class="cyan">║</text>
-  <text x="196" y="250" class="cyan">[3]</text>
-  <text x="237" y="250" class="wht">  Hardware e discos</text>
-  <text x="744" y="250" class="cyan">║</text>
-
-  <text x="100" y="270" class="cyan">║</text>
-  <text x="196" y="270" class="cyan">[4]</text>
-  <text x="237" y="270" class="wht">  Rede e internet</text>
-  <text x="744" y="270" class="cyan">║</text>
-
-  <text x="100" y="290" class="cyan">║</text>
-  <text x="196" y="290" class="cyan">[5]</text>
-  <text x="237" y="290" class="wht">  Saúde do sistema</text>
-  <text x="744" y="290" class="cyan">║</text>
-
-  <text x="100" y="310" class="cyan">║</text>
-  <text x="196" y="310" class="cyan">[6]</text>
-  <text x="237" y="310" class="wht">  Programas instalados recentemente</text>
-  <text x="744" y="310" class="cyan">║</text>
-
-  <text x="100" y="330" class="cyan">║</text>
-  <text x="196" y="330" class="cyan">[7]</text>
-  <text x="237" y="330" class="wht">  Buscar máquina na rede</text>
-  <text x="744" y="330" class="cyan">║</text>
-
-  <text x="100" y="350" class="cyan">║                                                              ║</text>
-  <!-- Divisor antes do sair -->
-  <text x="100" y="370" class="cyan">╠══════════════════════════════════════════════════════════════╣</text>
-
-  <!-- [0] Sair -->
-  <text x="100" y="390" class="cyan">║</text>
-  <text x="196" y="390" class="dgray">[0]  Sair</text>
-  <text x="744" y="390" class="cyan">║</text>
-
-  <!-- Fundo da caixa -->
-  <text x="100" y="410" class="cyan">╚══════════════════════════════════════════════════════════════╝</text>
+  <!-- Single text block, monospace, all lines aligned -->
+  <text class="t" x="90" y="65"  fill="#00d4d4">╔══════════════════════════════════════════════════════════════╗</text>
+  <text class="t" x="90" y="85"  fill="#00d4d4">║                                                              ║</text>
+  <text class="t" x="90" y="105" fill="#00d4d4">║              <tspan fill="#00d4d4">P R O S C A N</tspan>                              ║</text>
+  <text class="t" x="90" y="125" fill="#00d4d4">║           <tspan fill="#555">Diagnóstico do Windows</tspan>                      ║</text>
+  <text class="t" x="90" y="145" fill="#00d4d4">║                                                              ║</text>
+  <text class="t" x="90" y="165" fill="#00d4d4">╠══════════════════════════════════════════════════════════════╣</text>
+  <text class="t" x="90" y="185" fill="#00d4d4">║                                                              ║</text>
+  <text class="t" x="90" y="205" fill="#00d4d4">║   <tspan fill="#00d4d4">[1]</tspan>  <tspan fill="#ffffff">Diagnóstico completo</tspan>                              ║</text>
+  <text class="t" x="90" y="225" fill="#00d4d4">║   <tspan fill="#00d4d4">[2]</tspan>  <tspan fill="#ffffff">Identidade do computador e BIOS</tspan>                   ║</text>
+  <text class="t" x="90" y="245" fill="#00d4d4">║   <tspan fill="#00d4d4">[3]</tspan>  <tspan fill="#ffffff">Hardware e discos</tspan>                                 ║</text>
+  <text class="t" x="90" y="265" fill="#00d4d4">║   <tspan fill="#00d4d4">[4]</tspan>  <tspan fill="#ffffff">Rede e internet</tspan>                                   ║</text>
+  <text class="t" x="90" y="285" fill="#00d4d4">║   <tspan fill="#00d4d4">[5]</tspan>  <tspan fill="#ffffff">Saúde do sistema</tspan>                                  ║</text>
+  <text class="t" x="90" y="305" fill="#00d4d4">║   <tspan fill="#00d4d4">[6]</tspan>  <tspan fill="#ffffff">Programas instalados recentemente</tspan>                 ║</text>
+  <text class="t" x="90" y="325" fill="#00d4d4">║   <tspan fill="#00d4d4">[7]</tspan>  <tspan fill="#ffffff">Buscar máquina na rede</tspan>                            ║</text>
+  <text class="t" x="90" y="345" fill="#00d4d4">║                                                              ║</text>
+  <text class="t" x="90" y="365" fill="#00d4d4">╠══════════════════════════════════════════════════════════════╣</text>
+  <text class="t" x="90" y="385" fill="#00d4d4">║   <tspan fill="#555">[0]  Sair</tspan>                                             ║</text>
+  <text class="t" x="90" y="405" fill="#00d4d4">╚══════════════════════════════════════════════════════════════╝</text>
 
   <!-- Prompt -->
-  <text x="360" y="450" class="yell">Escolha › </text>
-  <!-- Cursor piscando simulado -->
-  <rect x="460" y="436" width="8" height="16" fill="#ffff00" opacity="0.8"/>
+  <text class="t" x="310" y="440" fill="#ffff00">Escolha › </text>
+  <rect x="407" y="426" width="9" height="15" fill="#ffff00" opacity="0.85"/>
 </svg>
