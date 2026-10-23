@@ -14,7 +14,7 @@ Funciona em modo **somente leitura**: não altera configurações, não reinicia
 
 ## Preview
 
-![ProScan Menu](assets/menu.svg)
+![ProScan Menu](assets/preview.png)
 
 ---
 
@@ -78,7 +78,7 @@ ProScan/
 ├── ProScan.ps1                  # Script principal
 ├── Install-ProScanShortcut.ps1  # Criação do atalho na Área de Trabalho
 ├── assets/
-│   └── menu.svg                 # Preview do menu principal
+│   └── preview.png              # Preview do menu principal
 └── README.md                    # Documentação
 ```
 
