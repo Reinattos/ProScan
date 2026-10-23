@@ -1,4 +1,4 @@
-﻿# ProScan — Diagnóstico do Windows
+﻿# ProScan - Diagnóstico do Windows
 
 > Ferramenta de diagnóstico para ambientes Windows corporativos, desenvolvida em **PowerShell puro**, sem necessidade de instalação de dependências externas.
 
@@ -6,7 +6,7 @@
 
 ## Sobre o projeto
 
-O **ProScan** nasceu da necessidade de agilizar o suporte de TI no dia a dia. Em vez de abrir vários painéis do Windows para coletar informações básicas de uma máquina, o ProScan centraliza tudo em um único terminal — com interface visual, cores por status e animação de carregamento para operações demoradas.
+O **ProScan** nasceu da necessidade de agilizar o suporte de TI no dia a dia. Em vez de abrir vários painéis do Windows para coletar informações básicas de uma máquina, o ProScan centraliza tudo em um único terminal, com interface visual, cores por status e animação de carregamento para operações demoradas.
 
 Funciona em modo **somente leitura**: não altera configurações, não reinicia serviços e não instala nenhum componente.
 
@@ -34,12 +34,12 @@ Funciona em modo **somente leitura**: não altera configurações, não reinicia
 
 ## Destaques técnicos
 
-- **Spinner animado** — exibido durante operações lentas (consultas de rede, Windows Update, Event Log, acesso remoto) para indicar que o sistema está processando
-- **Cores por status** — verde para serviços ativos e conexões bem-sucedidas, amarelo para alertas, vermelho para falhas críticas
-- **Alerta de disco** — amarelo quando o espaço livre está abaixo de 20%, vermelho abaixo de 10%
-- **Consulta remota com timeout** — ao buscar uma máquina via `[7]`, todas as consultas CIM/WMI têm timeout de 10 segundos, evitando que o script trave em máquinas inacessíveis
-- **Detecção de domínio corporativo** — identifica automaticamente se a máquina está ingressada na rede
-- **Compatível com PowerShell 5.1** — presente por padrão no Windows 10 e 11, sem necessidade de atualização
+- **Spinner animado** exibido durante operações lentas (consultas de rede, Windows Update, Event Log, acesso remoto) para indicar que o sistema está processando
+- **Cores por status** verde para serviços ativos e conexões bem-sucedidas, amarelo para alertas, vermelho para falhas críticas
+- **Alerta de disco** amarelo quando o espaço livre está abaixo de 20%, vermelho abaixo de 10%
+- **Consulta remota com timeout** ao buscar uma máquina via `[7]`, todas as consultas CIM/WMI têm timeout de 10 segundos, evitando que o script trave em máquinas inacessíveis
+- **Detecção de domínio corporativo** identifica automaticamente se a máquina está ingressada na rede
+- **Compatível com PowerShell 5.1** presente por padrão no Windows 10 e 11, sem necessidade de atualização
 
 ---
 
@@ -56,14 +56,14 @@ Funciona em modo **somente leitura**: não altera configurações, não reinicia
 
 ## Instalação
 
-**Opção 1 — Atalho na Área de Trabalho (recomendado)**
+**Opção 1 - Atalho na Área de Trabalho (recomendado)**
 
 1. Copie a pasta para `C:\ProScan\`
 2. Clique com o botão direito em `Install-ProScanShortcut.ps1`
 3. Selecione **Executar com PowerShell**
 4. O atalho **ProScan** será criado automaticamente na Área de Trabalho
 
-**Opção 2 — Execução direta pelo terminal**
+**Opção 2 - Execução direta pelo terminal**
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\ProScan\ProScan.ps1"
@@ -102,5 +102,5 @@ O ProScan opera exclusivamente em modo de leitura. Nenhuma configuração é alt
 
 ## Autor
 
-Desenvolvido por **Renato Moura** — TI | EXSA
+Desenvolvido por **Renato Moura** - TI | EXSA
 [GitHub](https://github.com/Reinattos)
