@@ -97,10 +97,3 @@ O ProScan opera exclusivamente em modo de leitura. Nenhuma configuração é alt
 | v2.2 | 22/10/2026 | Spinner animado, status do RDP (local e remoto), último login, CPU e RAM em uso, alerta crítico de disco, atualizações pendentes do Windows, usuário logado remotamente |
 | v2.1 | 20/10/2026 | Interface com caixas, menu centralizado, busca remota completa, opção `[0]` voltar ao menu |
 | v2.0 | 19/10/2026 | Versão inicial modularizada |
-
----
-
-## Autor
-
-Desenvolvido por **Renato Moura** - TI | EXSA
-[GitHub](https://github.com/Reinattos)
